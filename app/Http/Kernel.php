@@ -46,6 +46,15 @@ class Kernel extends HttpKernel
         'admin' => [
             \App\Http\Middleware\CheckAdmin::class,
         ],
+        'cliente' => [
+            \App\Http\Middleware\CheckCliente::class,
+        ],
+        'facturacion' => [
+            \App\Http\Middleware\CheckFacturacion::class,
+        ],
+        'contabilidad' => [
+            \App\Http\Middleware\CheckContabilidad::class,
+        ],
     ];
 
     /**
