@@ -33,22 +33,10 @@ class RouteServiceProvider extends ServiceProvider
 
             Route::middleware('web')
                 ->group(base_path('routes/web.php'));
-                
+
             Route::middleware('admin')
-            ->prefix('admin') //añadir un prefijo quiere decir que a la hora de hacer una peticion, añadias /admin/ para referirte a una clase
-            ->group(base_path('routes/admin.php'));
-
-            Route::middleware('cliente')
-            ->prefix('cliente')
-            ->group(base_path('routes/cliente.php'));
-
-            Route::middleware('facturacion')
-            ->prefix('facturacion')
-            ->group(base_path('routes/facturacion.php'));
-
-            Route::middleware('contabilidad')
-            ->prefix('contabilidad')
-            ->group(base_path('routes/contabilidad.php'));
+                ->prefix('admin') //añadir un prefijo quiere decir que a la hora de hacer una peticion, añadias /admin/ para referirte a una clase
+                ->group(base_path('routes/admin.php'));
         });
     }
 

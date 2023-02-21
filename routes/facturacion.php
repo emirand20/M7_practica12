@@ -1,6 +1,6 @@
 <?php
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Admin\ControllerFacturacion;
-use App\Http\Middleware\CheckFacturacion;
+use App\Http\Controllers\Admin\ControladorAdmin;
+use App\Http\Middleware\CheckAdmin;
 
-Route::get('articulos', [ControllerFacturacion::class,'facturacion'])->middleware(CheckFacturacion::class);
+Route::get('facturacion', [ControladorAdmin::class,'facturacion'])->middleware(CheckAdmin::class);
