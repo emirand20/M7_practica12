@@ -8,7 +8,7 @@ class ControladorAdmin extends Controller
 {
     public function articulos()
     {
-        return view('Admin.mensajeAdmin')->with(['text'=>'Bienvenidos a la pagina artículos']);
+        return view('Admin.mensajeAdmin')->with(['text'=>'Bienvenidos a la página principal, que artículo desea comprar. (wºw)']);
     }
 
     public function clientes()
