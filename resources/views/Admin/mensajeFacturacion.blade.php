@@ -1,4 +1,8 @@
 {{$text}}
 <br/>
-<a href="<?= route('entrada') ?>">
-    Inicio</a>
+<a href="<?= route('home') ?>">
+    Home</a>
+<a href="<?= route('clientes') ?>">
+    Cliente</a>
+<a href="<?= route('contabilidad') ?>">
+    Contabilidad</a>
